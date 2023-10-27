@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@pinia/nuxt'
   ],
   css: ['~/assets/scss/navbar.scss'],
   app: {

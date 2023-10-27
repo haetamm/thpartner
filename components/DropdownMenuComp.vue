@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto w-full flex flex-wrap justify-between mb-8">
+  <div class="container mx-auto w-full flex flex-wrap justify-between mb-8 lg:mb-0 pt-2">
     <div class="w-full text-white mb-2 md:mb-8">
       <h2 class="font-bold text-2xl">
         Main Hero Message for the menu section

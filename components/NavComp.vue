@@ -43,7 +43,7 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
           <a class="toggleable text-white">
             <input id="toggle-one" type="checkbox" value="selected" class="toggle-input">
             <label for="toggle-one" class="block cursor-pointer py-6 px-2 lg:p-6 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom">SERVICES</label>
-            <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl  overflow-auto lg:overflow-hidden h-screen md:h-[500px] lg:h-[330px]">
+            <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl mt-0.5 overflow-auto lg:overflow-hidden h-screen md:h-[500px] lg:h-[330px]">
               <DropdownMenuComp />
             </div>
           </a>
@@ -57,6 +57,7 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
+            @click="toggleDropdown"
           ><g data-name="Layer 2"><g data-name="menu-2"><circle cx="4" cy="12" r="1" /><rect
             width="14"
             height="2"
@@ -84,6 +85,19 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
     </div>
   </nav>
 </template>
+
+<script setup>
+import { useSidebarStore } from '@/store'
+
+const sidebarStore = useSidebarStore()
+const toggleDropdown = sidebarStore.toggleDropdown
+</script>
+
+<style scoped>
+.router-link-exact-active {
+  border-bottom: 2px solid white;
+}
+</style>
 
 <style lang="scss">
 @use "../assets/scss/navbar.scss"

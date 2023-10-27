@@ -25,10 +25,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#0f0f0f",GradientType=1);
 }
 
-.router-link-exact-active {
-  border-bottom: 2px solid white;
-}
-
 .font-custom {
   font-family: "PT Mono", monospace;
 }
