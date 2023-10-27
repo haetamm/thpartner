@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-white pt-[4.6rem] md:pt-[5rem]">
+    <div class="bg-white pt-[4.6rem] md:pt-[5.1rem]">
       <div id="controls-carousel" class="relative w-full" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56  md:h-[27rem] overflow-hidden rounded-none">

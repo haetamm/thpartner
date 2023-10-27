@@ -1,7 +1,7 @@
 <template>
   <div class="pt-0 xs:pt-10 md:pt-0">
     <div class="flex justify-center mx-auto items-center h-screen background-color-custom">
-      <div class="justify-center text-center text-white select-none  py-0 lg:py-24 container border-custom">
+      <div class="justify-center text-center text-white select-none  py-0 lg:py-24 container border-custom lg:mt-10 items-center">
         <div class="text-3xl xs:text-5xl md:text-6xl font-custom font-bold text-center">
           TATANG HAETAMI
         </div>
