@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+// Contoh penggunaan font di dalam CSS Anda
+.font-custom {
+  font-family: 'PT Mono', monospace;
+}
+
+.router-link-exact-active {
+  border-bottom: 2px solid white;
+}
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.background-color-custom {
+  background: rgb(15,15,15);
+  background: -moz-linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
+  background: -webkit-linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
+  background: linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#0f0f0f",GradientType=1);
+}
+
+.nav-background {
+  background-color: #232D3F;
+}
+
+/* #Mega Menu Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .logo {
+    background-image: url('/law_icon.png');
+    background-size: cover;
+  }
+  .mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    background-color: #008170;
+  }
+
+
+
+  /* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hoverable {
+    position: static;
+  }
+
+  .hoverable > a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .hoverable:hover .mega-menu {
+    display: block;
+  }
+
+
+  /* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .toggleable > label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+  .toggle-input:not(checked) ~ .mega-menu {
+    display: none;
+  }
+
+  .toggle-input:checked ~ .mega-menu {
+    display: block;
+  }
+
+  .toggle-input:checked + label {
+    color: white;
+    background: #008170; /*@apply bg-blue-800 */
+  }
+
+  .toggle-input:checked ~ label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
