@@ -1,10 +1,5 @@
-
-.font-custom {
-  font-family: 'PT Mono', monospace;
-}
-
-.router-link-exact-active {
-  border-bottom: 2px solid white;
+.nav-background {
+  background-color: #232D3F;
 }
 
 /* Top and Bottom borders go out */
@@ -36,18 +31,6 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 {
     opacity: 1;
     transform: translateY(0px);
-}
-
-.background-color-custom {
-  background: rgb(15,15,15);
-  background: -moz-linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
-  background: -webkit-linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
-  background: linear-gradient(90deg, rgba(15,15,15,1) 10%, rgba(98,99,99,1) 50%, rgba(15,15,15,1) 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#0f0f0f",GradientType=1);
-}
-
-.nav-background {
-  background-color: #232D3F;
 }
 
 /* #Mega Menu Styles
@@ -102,20 +85,4 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 }
 
 
-/* #hoverable Class Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hoverable {
-  position: static;
-}
 
-.hoverable > a:after {
-  content: "\25BC";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
-}
-
-.hoverable:hover .mega-menu {
-  display: block;
-}

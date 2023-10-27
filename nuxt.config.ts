@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module'
   ],
+  css: ['~/assets/scss/navbar.scss'],
   app: {
     head: {
       link: [
