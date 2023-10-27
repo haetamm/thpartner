@@ -1,22 +1,20 @@
 <template>
-  <div class="background-color-custom">
-    <div class="pt-10 xs:pt-0 md:pt-10 2xl:pt-12">
-      <div class="mt-10" />
-
+  <div>
+    <div class="bg-white pt-[4.6rem] md:pt-[5rem]">
       <div id="controls-carousel" class="relative w-full" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="relative h-[350px] md:h-[501px] overflow-hidden rounded-lg ">
+        <div class="relative h-56  md:h-[27rem] overflow-hidden rounded-none">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="absolute block w-full h-[350px] md:h-[501px] team" />
+            <div class="absolute block w-full h-56  md:h-[27rem] team" />
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <div class="absolute block w-full h-[350px] md:h-[501px] team" />
+            <div class="absolute block w-full h-56  md:h-[27rem] team" />
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <div class="absolute block w-full h-[350px] md:h-[501px] team" />
+            <div class="absolute block w-full h-56  md:h-[27rem] team" />
           </div>
         </div>
         <!-- Slider controls -->
@@ -38,7 +36,12 @@
         </button>
       </div>
     </div>
-    <FooterComp class="fixed" />
+    <div class="flex justify-center mt-5">
+      <div class="text-2xl lg:text-5xl font-bold font-custom border-b-2 border-black mb-2">
+        Our Team
+      </div>
+    </div>
+    <FooterComp class="" />
   </div>
 </template>
 

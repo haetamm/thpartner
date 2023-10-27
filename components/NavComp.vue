@@ -200,5 +200,5 @@
 </template>
 
 <style lang="scss">
-@use "~/assets/scss/navbar.scss"
+@use "../assets/scss/navbar.scss"
 </style>

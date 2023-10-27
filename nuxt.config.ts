@@ -5,18 +5,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module'
   ],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-            @use "@/assets/scss/footer.scss" as *;
-            @use "@/assets/scss/index.scss" as *;
-            @use "@/assets/scss/modal.scss" as *;
-            @use "@/assets/scss/navbar.scss" as *;
-          `
-        }
-      }
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=PT+Mono&display=swap' }
+      ]
     }
   }
 })

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-0 xs:pt-6 md:pt-0">
+  <div class="pt-0 xs:pt-10 md:pt-0">
     <div class="flex justify-center mx-auto items-center h-screen background-color-custom">
       <div class="justify-center text-center text-white select-none  py-0 lg:py-24 container border-custom">
         <div class="text-3xl xs:text-5xl md:text-6xl font-custom font-bold text-center">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <FooterComp class="fixed bottom-0 " />
+    <FooterComp class="fixed xs:relative md:fixed bottom-0 " />
   </div>
 </template>
 
