@@ -1,0 +1,116 @@
+.shadow-custom {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+%reset { margin: 0; padding: 0; }
+%flex {
+    display: flex;
+    justify-content:
+    center;
+    align-items: center;
+}
+
+@mixin animated($timein: null, $delay: null) {
+ transition: all $timein ease-in-out;
+  transition-delay: $delay;
+}
+
+@mixin dimensions($width: null, $height: null) { width: $width; min-height: $height; }
+
+$maincolor: #009688;
+    html{height: 100%;}
+    body{
+
+      @extend %flex;
+       font-family: 'Open Sans', sans-serif;
+      width: 100%;
+      min-height: 100%;
+      background: #009688;
+      font-size: 16px;
+      overflow: hidden;
+    }
+
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+.content{
+  position: relative;
+  animation: animatop 0.9s  cubic-bezier(0.425, 1.140, 0.470, 1.125) forwards ;
+}
+
+.card{
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 300px;
+    background: #008170;
+    opacity: 0.9;
+
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.040, 0.470, 1.105) 1s both;
+}
+}
+
+
+.firstinfo{
+  @extend %flex;
+  flex-direction: row;
+  z-index:2;
+  position: relative;
+  img{
+    border-radius: 50%;
+    width: 120px;
+height: 120px;
+  }
+  .profileinfo{
+    font-family: "Gabarito";
+    padding: 0px 20px;
+    h1{ font-size: 1.8em;}
+    h3{ font-size: 1.2em;
+        color: $maincolor;
+        font-style: italic;
+    }
+    p.bio{
+      padding: 10px 0px;
+      line-height: 1.2;
+      font-style: initial;
+    }
+  }
+}
+
+@keyframes animatop{
+  0%{
+    opacity: 0;
+    bottom: -500px;}
+  100%{
+   opacity: 1;
+  bottom: 0px;}
+}
+
+@keyframes animainfos{
+  0%{
+    bottom:  10px;}
+  100%{
+  bottom: -42px;}
+}
+
+@keyframes rotatemagic{
+  0%{
+    opacity: 0;
+    transform: rotate(-0deg);
+    top: -24px;
+    left: -253px;
+  }
+  100%{
+
+    transform: rotate(-30deg);
+    top: -24px;
+    left: -78px;
+  }
+}

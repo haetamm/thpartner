@@ -1,12 +1,12 @@
 <template>
-  <div class="container mx-auto w-full flex flex-wrap justify-between mb-8 lg:mb-0 pt-2">
+  <div class="container mx-auto w-full flex flex-wrap justify-between mb-8 xs:mb-0 lg:mb-6 ">
     <div class="w-full text-white mb-2 md:mb-8">
       <h2 class="font-bold text-2xl">
         Main Hero Message for the menu section
       </h2>
       <p>Sub-hero message, not too long and not too short. Make it just right!</p>
     </div>
-    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+    <ul class="px-4 w-full xs:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
       <div class="flex items-center">
         <svg
           class="h-8 mb-3 mr-3 fill-current text-white"
@@ -30,10 +30,12 @@
         >
           <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z" />
         </svg>
-        <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+        <NuxtLink to="/" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">
+          Find out more...
+        </NuxtLink>
       </div>
     </ul>
-    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+    <ul class="px-4 w-full xs:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
       <div class="flex items-center">
         <svg
           class="h-8 mb-3 mr-3 fill-current text-white"
@@ -60,7 +62,7 @@
         <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
       </div>
     </ul>
-    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+    <ul class="px-4 w-full xs:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r xs:border-b-0 pb-6 pt-6 lg:pt-3">
       <div class="flex items-center">
         <svg
           class="h-8 mb-3 mr-3 fill-current text-white"
@@ -87,7 +89,7 @@
         <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
       </div>
     </ul>
-    <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
+    <ul class="px-4 w-full xs:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
       <div class="flex items-center">
         <svg
           class="h-8 mb-3 mr-3 fill-current text-white"

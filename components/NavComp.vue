@@ -40,13 +40,13 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
           <a class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">APPOINTMENT</a>
 
           <!--Toggleable Link-->
-          <a class="toggleable text-white">
+          <div class="toggleable text-white">
             <input id="toggle-one" type="checkbox" value="selected" class="toggle-input">
             <label for="toggle-one" class="block cursor-pointer py-6 px-2 lg:p-6 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom">SERVICES</label>
-            <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl mt-0.5 overflow-auto lg:overflow-hidden h-screen md:h-[500px] lg:h-[330px]">
+            <div role="toggle" class="p-6 mega-menu mb-16 xs:mb-0 shadow-xl mt-0 overflow-auto lg:overflow-hidden h-[355px] xs:h-[250px] lg:h-[330px]">
               <DropdownMenuComp />
             </div>
-          </a>
+          </div>
         </div>
         <div class="text-white flex items-center xs:hidden mx-1 xs:mx-0">
           <svg

@@ -1,8 +1,20 @@
- @media (min-width: 1281px) {
-    .border-custom {
-      border-top: 10px double white;
-      border-right: 10px double transparent;
-      border-bottom: 10px double white;
-      border-left: 10px double transparent;
-    }
+@media (min-width: 846px) {
+  .border-custom {
+    border-top: 10px double white;
+    border-right: 10px double transparent;
+    border-bottom: 10px double white;
+    border-left: 10px double transparent;
   }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}

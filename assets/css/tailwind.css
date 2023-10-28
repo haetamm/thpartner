@@ -28,3 +28,7 @@
 .font-custom {
   font-family: "PT Mono", monospace;
 }
+
+body {
+  overflow-y: scroll;
+}
