@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <!-- <FooterComp class="fixed xs:relative md:fixed bottom-0 " /> -->
+    <FooterComp class="lg:fixed" />
   </div>
 </template>
 

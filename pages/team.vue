@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-background">
+  <div class="background-color-custom">
     <div class="bg-white pt-[4.6rem] md:pt-[5.1rem]">
       <div class=" w-full">
         <!-- Carousel wrapper -->
@@ -16,15 +16,15 @@
         Our Team
       </div>
     </div>
-    <div class="flex justify-center mt-2 mb-10 relative nav-background pb-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-center container gap-10">
+    <div class="flex justify-center mt-2 mb-10 relative background-color-custom pb-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center container gap-10 px-2">
         <CardMemberComp />
         <CardMemberComp />
         <CardMemberComp />
         <CardMemberComp />
       </div>
     </div>
-    <!-- <FooterComp class="" /> -->
+    <FooterComp class="" />
   </div>
 </template>
 
