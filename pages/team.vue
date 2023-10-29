@@ -30,7 +30,7 @@
 import { useMemberStore } from '~/store'
 
 const memberStore = useMemberStore()
-const { data: teams } = await useFetch('http://localhost:3000/api/team')
+const { data: teams } = await useFetch('https://thnotary.netlify.app/api/team')
 
 memberStore.setMemberList(teams._rawValue)
 
