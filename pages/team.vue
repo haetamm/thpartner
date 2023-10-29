@@ -11,13 +11,13 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-5">
+    <div class="flex justify-center mt-10 md:mt-5">
       <div class="text-2xl lg:text-5xl text-white font-bold font-custom border-b-2 border-white mb-2">
         Our Team
       </div>
     </div>
     <div class="flex justify-center mt-2 mb-10 relative background-color-custom pb-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-center container gap-10 px-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center container gap-10 px-0 xs:px-3">
         <CardMemberComp />
         <CardMemberComp />
         <CardMemberComp />
@@ -25,6 +25,7 @@
       </div>
     </div>
     <FooterComp class="" />
+    <SidebarComp />
   </div>
 </template>
 

@@ -20,6 +20,7 @@
       </div>
     </div>
     <FooterComp class="lg:fixed" />
+    <SidebarComp />
   </div>
 </template>
 

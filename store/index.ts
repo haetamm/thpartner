@@ -6,9 +6,18 @@ export const useSidebarStore = defineStore('sidebar', {
   }),
   actions: {
     toggleDropdown () {
-      // console.log('hallo')
       this.isDropdownOpen = !this.isDropdownOpen
-      // console.log(this.isDropdownOpen)
+    }
+  }
+})
+
+export const useModalStore = defineStore('modal', {
+  state: () => ({
+    isModalOpen: false
+  }),
+  actions: {
+    toggleModal () {
+      this.isModalOpen = !this.isModalOpen
     }
   }
 })
