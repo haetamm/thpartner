@@ -13,3 +13,11 @@
     <SidebarComp />
   </div>
 </template>
+<script setup>
+useHead({
+  title: 'TH | Location',
+  meta: [
+    { name: 'description', content: 'Jl. Veteran, RT/RW : 02/03 , Gambir, Kec. Gambir Kota Jakarta pusat, DKI Jakarta' }
+  ]
+})
+</script>

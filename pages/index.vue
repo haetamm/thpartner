@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <FooterComp class="" />
+    <FooterComp />
     <SidebarComp />
   </div>
 </template>

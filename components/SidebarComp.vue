@@ -69,7 +69,7 @@
           </div>
         </NuxtLink>
 
-        <NuxtLink to="/contact" class="text-white py-2 px-4 w-full flex cursor-pointer" @click="toggleDropdown">
+        <NuxtLink to="/location" class="text-white py-2 px-4 w-full flex cursor-pointer" @click="toggleDropdown">
           <div class="mr-4 flex-shrink-0 my-auto">
             <svg class="fill-current h-5 w-5" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -78,7 +78,7 @@
             </svg>
           </div>
           <div class="flex-auto my-1 ml-2">
-            <span>CONTACT</span>
+            <span>LOCATION</span>
           </div>
         </NuxtLink>
 

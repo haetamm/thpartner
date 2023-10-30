@@ -1,11 +1,9 @@
 <template>
   <div>
     <NavComp />
-    <!-- <SidebarComp /> -->
-    <div class=" mx-auto">
+    <div class="background-color-custom mx-auto">
       <slot />
     </div>
     <ModalComp />
-    <!-- <FooterComp /> -->
   </div>
 </template>
