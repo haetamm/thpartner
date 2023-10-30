@@ -36,7 +36,9 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
           <NuxtLink to="/team" class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">
             TEAM
           </NuxtLink>
-          <a class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">CONTACT</a>
+          <NuxtLink to="/contact" class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">
+            CONTACT
+          </NuxtLink>
           <a class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">APPOINTMENT</a>
 
           <!--Toggleable Link-->

@@ -1,13 +1,139 @@
 <template>
-  <footer class="w-full mx-auto py-2 px-2 md:px-4 flex bottom-0 items-center justify-center xs:justify-start background-color-custom text-white border-double border-t-4 border-gray">
-    <div class="flex gap-4 items-center text-sm">
-      <div>
-        Copyright © 2023 All Rights Reserved by <NuxtLink to="https://github.com/THaetami" class="font-custom">
+  <footer class="footer-distributed border-t-2 border-white nav-background">
+    <div class="footer-left select-none">
+      <div class="flex font-custom items-center text-white hover:text-green-500 justify-center md:justify-normal">
+        <svg
+          id="
+          Layer_1"
+          class=" w-[40px] h-[62px]"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="currentColor"
+          version="1.1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 40.66 62.22"
+          style="enable-background:new 0 0 40.66 62.22;"
+          xml:space="preserve"
+        >
+          <g>
+            <path d="M18.42,15.76v24.19c0,0.55-0.45,1-1,1h-0.11c-0.5,0-0.91-0.41-0.91-0.91V15.76c0-0.5,0.41-0.91,0.91-0.91h0.2   C18.02,14.85,18.42,15.26,18.42,15.76z" />
+            <path d="M8.31,1.39l24.19,0c0.55,0,1,0.45,1,1v0.11c0,0.5-0.41,0.91-0.91,0.91H8.31c-0.5,0-0.91-0.41-0.91-0.91V2.3   C7.39,1.8,7.8,1.39,8.31,1.39z" />
+            <path d="M26.64,43.59H13.97V15.57c0-0.4-0.32-0.72-0.72-0.72h-0.59c0,0-0.72,0.31-0.81,0.71v28.58c0.08,0.04,0.1,0.13,0.1,0.13   v0.62c0,0.4,0.32,0.72,0.72,0.72h14.04c0.4,0,0.72-0.32,0.72-0.72v-0.51C27.43,43.94,27.07,43.59,26.64,43.59z" />
+            <path d="M2.24,5.85h36.13c0.55,0,1,0.45,1,1v0.11c0,0.5-0.41,0.91-0.91,0.91H2.24c-0.5,0-0.91-0.41-0.91-0.91v-0.2   C1.32,6.25,1.73,5.85,2.24,5.85z" />
+            <path d="M22.88,15.76v24.19c0,0.55-0.45,1-1,1h-0.11c-0.5,0-0.91-0.41-0.91-0.91V15.76c0-0.5,0.41-0.91,0.91-0.91h0.2   C22.47,14.85,22.88,15.26,22.88,15.76z" />
+            <path d="M27.43,15.76v24.19c0,0.55-0.45,1-1,1h-0.11c-0.5,0-0.91-0.41-0.91-0.91V15.76c0-0.5,0.41-0.91,0.91-0.91h0.2   C27.02,14.85,27.43,15.26,27.43,15.76z" />
+            <path d="M33.61,45.28L33.61,45.28L33.6,32.27c0-0.4-0.32-0.72-0.72-0.72H32.3c-0.4,0-0.72,0.32-0.72,0.72v12.34L20.54,58.27l0,0   l-0.01,0.01l0.01-0.01L9.42,44.56V12.32h22.06v5.45c0,0.4,0.32,0.72,0.72,0.72h0.51c0,0,0.79-0.41,0.69-0.84v-6.01   c0.1-0.02,0.1-0.04,0.1-0.06v-0.5c0-0.44-0.79-0.78-0.79-0.78H8.13c-0.23,0-0.44,0.11-0.57,0.28c-0.11,0.12-0.17,0.29-0.17,0.46   v34.19l0,0l11.84,14.55l0,0l1.31,1.6l1.29-1.59l0,0L33.61,45.28z" />
+          </g>
+        </svg>
+        <h3
+          class="text-5xl font-bold hover:text-green-500 md:font-semibold select-none font-custom"
+        >
           TH
+        </h3>
+      </div>
+
+      <p class="footer-links">
+        <NuxtLink to="/" class="text-white hover:text-green-500 link-1">
+          Home
         </NuxtLink>
+
+        <NuxtLink to="/team" class="text-white hover:text-green-500">
+          Team
+        </NuxtLink>
+
+        <NuxtLink to="/contact" class="text-white hover:text-green-500">
+          Contact
+        </NuxtLink>
+
+        <NuxtLink to="/appointment" class="text-white hover:text-green-500">
+          Appointment
+        </NuxtLink>
+      </p>
+
+      <p class="footer-company-name text-white hover:text-green-500">
+        TH Notary © 2023
+      </p>
+    </div>
+
+    <div class="footer-center">
+      <NuxtLink to="/contact" class="flex items-center text-white hover:text-green-500 justify-center md:justify-normal">
+        <svg
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="24px"
+          width="24px"
+          version="1.1"
+          viewBox="0 0 24.834 24.834"
+          xml:space="preserve"
+          fill="currentColor"
+          class="mr-2 hidden md:block"
+        >
+          <path d="M6.301,16.501c0,0,3.829-8.827,4.407-10.546c0.182-0.481,0.285-1,0.285-1.543    C10.993,1.976,9.017,0,6.579,0c-2.436,0-4.41,1.976-4.41,4.413c0,0.476,0.078,0.931,0.215,1.361    C2.697,6.877,6.301,16.501,6.301,16.501z M6.579,2.359c1.134,0,2.053,0.919,2.053,2.053c0,1.133-0.919,2.052-2.053,2.052    c-1.133,0-2.051-0.919-2.051-2.052C4.527,3.279,5.446,2.359,6.579,2.359z" />
+          <path d="M24.795,11.637C24.389,5.154,19,0,12.417,0c-0.841,0-1.663,0.087-2.459,0.247    c0.514,0.417,0.947,0.929,1.278,1.506c0.132-0.04,0.264-0.084,0.4-0.11v0.986c0.198,0.559,0.311,1.158,0.311,1.784    c0,0.638-0.116,1.271-0.346,1.879c-0.017,0.049-0.044,0.121-0.065,0.181c0.034,0,0.066-0.006,0.1-0.007v5.171h-2.21    c-0.225,0.53-0.448,1.055-0.664,1.56h2.875v5.174c-1.712-0.071-3.319-0.379-4.736-0.853L6.236,19.05l-0.83-2.215    c-0.052-0.138-0.507-1.355-1.09-2.923c0.074,0.919,0.195,1.814,0.394,2.661c-1.615-0.904-2.719-2.084-3.041-3.378h2.382    c-0.188-0.505-0.381-1.029-0.577-1.56H1.669c0.167-0.673,0.552-1.314,1.104-1.903C2.252,8.307,1.8,7.054,1.583,6.401    c-0.873,1.57-1.425,3.342-1.544,5.233l0.001,1.56c0.405,6.486,5.793,11.64,12.377,11.64c6.583,0,11.972-5.154,12.378-11.638    V11.637z M2.639,17.105c0.767,0.593,1.675,1.112,2.704,1.539c0.475,1.232,1.081,2.333,1.796,3.252    C5.188,20.806,3.613,19.127,2.639,17.105z M11.637,23.19c-1.743-0.336-3.282-1.777-4.343-3.893    c1.333,0.357,2.794,0.575,4.343,0.63V23.19z M22.195,7.731c-0.768-0.593-1.676-1.114-2.704-1.54    c-0.474-1.234-1.081-2.336-1.797-3.253C19.647,4.029,21.223,5.708,22.195,7.731z M13.196,1.643    c1.743,0.337,3.283,1.779,4.345,3.894c-1.334-0.357-2.796-0.574-4.345-0.63C13.196,4.907,13.196,1.643,13.196,1.643z     M13.196,6.466c1.857,0.078,3.603,0.421,5.103,0.968c0.406,1.275,0.657,2.696,0.723,4.204h-5.825L13.196,6.466L13.196,6.466z     M13.196,13.196h5.825c-0.065,1.507-0.316,2.93-0.723,4.205c-1.499,0.545-3.244,0.891-5.103,0.969v-5.174H13.196z M13.196,23.19    v-3.263c1.549-0.056,3.01-0.272,4.344-0.63C16.48,21.413,14.94,22.855,13.196,23.19z M17.693,21.896    c0.717-0.917,1.323-2.02,1.798-3.252c1.028-0.427,1.937-0.946,2.704-1.539C21.221,19.127,19.646,20.806,17.693,21.896z     M20.123,16.575c0.251-1.067,0.408-2.199,0.457-3.378h2.585C22.842,14.491,21.739,15.67,20.123,16.575z M20.58,11.637    c-0.049-1.178-0.205-2.31-0.457-3.377c1.615,0.905,2.719,2.083,3.042,3.377H20.58z" />
+        </svg>
+        <p><span>Jl. Veteran, RT/RW : 02/03 , Gambir, Kec. Gambir</span> Kota Jakarta pusat, DKI Jakarta</p>
+      </NuxtLink>
+
+      <div class="flex items-center space-x-2 text-white hover:text-green-500 font-normal mt-3 justify-center md:justify-normal">
+        <svg
+          id="_x32_"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="24px"
+          width="24px"
+          version="1.1"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+          fill="currentColor"
+          class="hidden md:block"
+        >
+          <path d="M337.168,289.578c-5.129-5.133-13.457-5.133-18.598,0l-16.031,16.038c-4.68,4.68-12.122,5.149-17.352,1.102   c0,0-15.332-10.109-40.402-35.179c-25.07-25.07-35.175-40.414-35.175-40.414c-4.055-5.226-3.578-12.656,1.102-17.343l16.031-16.031   c5.141-5.134,5.141-13.462,0-18.594l-35.34-35.343c-5.133-5.133-13.453-5.133-18.594,0c-0.122,0.125-1.906,1.906-21.309,21.32   c-22.602,22.594,7.293,91.82,57.574,142.118c50.289,50.281,119.527,80.164,142.121,57.578   c19.394-19.406,21.184-21.203,21.305-21.32c5.141-5.133,5.141-13.461,0-18.586L337.168,289.578z" />
+          <path d="M256,0C114.614,0,0,114.617,0,256s114.614,256,256,256s256-114.617,256-256S397.386,0,256,0z M256,472   c-119.102,0-216-96.898-216-216S136.898,40,256,40s216,96.898,216,216S375.102,472,256,472z" />
+        </svg>
+        <div><span>+62 21 2354 5001</span></div>
+      </div>
+
+      <div class="justify-center md:justify-normal flex">
+        <NuxtLink to="mailto:support@company.com" class="flex items-center space-x-2 text-white hover:text-green-500 font-normal mt-3">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="currentColor"
+            version="1.1"
+            width="24px"
+            height="24px"
+            viewBox="0 0 512 512"
+            enable-background="new 0 0 512 512"
+            xml:space="preserve"
+            class="hidden md:block"
+          >
+            <path d="M256,0C114.609,0,0,114.609,0,256s114.609,256,256,256s256-114.609,256-256S397.391,0,256,0z M256,472   c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472z" />
+            <path d="M368,234.375v74.438l-54.5-59.422l16.719-11.312c-5.984-1.531-11.641-3.922-16.688-7.203L256,271.75L166.281,208H256    h37.625c-2.391-4.984-4-10.344-4.812-16H256H128v160h128h128V223.062C379.422,227.75,373.969,231.531,368,234.375z M144,212.531    l54.5,36.859L144,308.812V212.531z M256,336h-92.406l45.562-79.422L256,288.25l46.844-31.672L348.406,336H256z" />
+            <path d="M344,224c22.094,0,40-17.906,40-40s-17.906-40-40-40s-40,17.906-40,40S321.906,224,344,224z M344,153.594L363.203,176H352   v32h-16v-32h-11.203L344,153.594z" />
+          </svg>
+          <div><span>support@thnotary.com</span></div>
+        </NuxtLink>
+      </div>
+    </div>
+
+    <div class="footer-right select-none">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      </p>
+
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook" /></a>
+        <a href="#"><i class="fa fa-twitter" /></a>
+        <a href="#"><i class="fa fa-linkedin" /></a>
+        <a href="#"><i class="fa fa-github" /></a>
       </div>
     </div>
   </footer>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+@use "../assets/scss/footer.scss"
 </style>

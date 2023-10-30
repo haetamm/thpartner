@@ -29,6 +29,7 @@
 
 .description {
     font-size: 19px;
+    line-clamp: 1;
 }
 
 .image-user {
@@ -85,7 +86,8 @@
     }
 
     button:hover {
-        background-color: transparent;
+        background-color: #008170;
+        color: white;
     }
 }
 
@@ -136,6 +138,9 @@
         width: 25%;
     }
 
+    .detail-modal {
+        width: 80%;
+    }
     
 }
 
@@ -152,5 +157,11 @@
     .image-user {
         width: 430px;
         height: 430px;
+    }
+}
+
+@media only screen and (min-width: 1256px) {
+    .detail-modal {
+        width: 65%;
     }
 }

@@ -8,8 +8,8 @@
               &times;
             </div>
           </div>
-          <div class="justify-center grid grid-cols-1 xs:grid-cols-2 gap-3 lg:gap-0">
-            <div class="flex justify-center  items-start lg:items-center">
+          <div class="justify-center grid grid-cols-1 xs:grid-cols-2 gap-3">
+            <div class="flex justify-center  items-start xs:justify-start">
               <div :style="`background-image: url('${member.avatar}'); background-size: cover;`" class="image-user" />
             </div>
             <div>
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="flex justify-end items-center pb-2">
-            <button class="cursor pointer bg-blue-700 rounded-md " @click="toggleModal">
+            <button class="cursor pointer nav-background rounded-md text-white" @click="toggleModal">
               close
             </button>
           </div>
