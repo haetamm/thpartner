@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=PT+Mono&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Gabarito&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Gabarito&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700' }
       ]
     }
   }

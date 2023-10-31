@@ -1,11 +1,11 @@
 import type DropdownMenuCompVue from './DropdownMenuComp.vue';
 <template>
-  <nav class="fixed w-full nav-background border-b-2 border-gray-300 text-gray-900">
-    <div class="container mx-auto flex justify-between">
-      <div class="relative p-0.5 px-2 xs:p-2 md:px-0 font-bold flex items-center ml-0 md:ml-2 hover:text-green-500 text-white ">
+  <nav class="fixed w-full nav-background border-b-2 border-gray-300 text-gray-900 py-2 xs:py-0">
+    <div class="container mx-auto flex justify-between pr-3">
+      <div class="relative flex flex-1 items-center hover:text-green-500 text-white mr-5">
         <svg
           id="Layer_1"
-          class=" h-[41px] w-[33px] md:w-[40px] md:h-[62px]"
+          class=" h-[51px] w-[43px]"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           fill="currentColor"
@@ -26,29 +26,39 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
             <path d="M33.61,45.28L33.61,45.28L33.6,32.27c0-0.4-0.32-0.72-0.72-0.72H32.3c-0.4,0-0.72,0.32-0.72,0.72v12.34L20.54,58.27l0,0   l-0.01,0.01l0.01-0.01L9.42,44.56V12.32h22.06v5.45c0,0.4,0.32,0.72,0.72,0.72h0.51c0,0,0.79-0.41,0.69-0.84v-6.01   c0.1-0.02,0.1-0.04,0.1-0.06v-0.5c0-0.44-0.79-0.78-0.79-0.78H8.13c-0.23,0-0.44,0.11-0.57,0.28c-0.11,0.12-0.17,0.29-0.17,0.46   v34.19l0,0l11.84,14.55l0,0l1.31,1.6l1.29-1.59l0,0L33.61,45.28z" />
           </g>
         </svg>
-        <a href="#" class="relative block text-3xl md:text-5xl font-bold md:font-semibold select-none font-custom">TH</a>
+        <span to="/" class="relative block select-none font-custom text-4xl font-normal">
+          TH
+        </span>
       </div>
       <div class="flex justify-end">
-        <div class="flex topBotomBordersOut items-center">
-          <NuxtLink to="/" class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">
+        <div class="flex borderXwidth items-center">
+          <NuxtLink to="/" class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">
             HOME
           </NuxtLink>
-          <NuxtLink to="/team" class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">
+          <NuxtLink to="/team" class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">
             TEAM
           </NuxtLink>
-          <NuxtLink to="/location" class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">
+          <NuxtLink to="/location" class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">
             LOCATION
           </NuxtLink>
-          <a class="relative py-2 px-4 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom text-white cursor-pointer hidden xs:block">APPOINTMENT</a>
+          <a class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">APPOINTMENT</a>
 
           <!--Toggleable Link-->
-          <div class="toggleable text-white">
+          <div class="hoverable text-white hidden xs:block">
+            <NuxtLink to="/service" class=" block  py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold ">
+              SERVICES
+            </NuxtLink>
+            <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-blue-800">
+              <DropdownMenuComp />
+            </div>
+          </div>
+          <!-- <div class="toggleable text-white">
             <input id="toggle-one" type="checkbox" value="selected" class="toggle-input">
             <label for="toggle-one" class="block cursor-pointer py-6 px-2 lg:p-6 text-md xs:text-sm md:text-md lg:text-lg font-bold select-none font-custom">SERVICES</label>
             <div role="toggle" class="p-6 mega-menu mb-16 xs:mb-0 shadow-xl mt-0 overflow-auto lg:overflow-hidden h-[355px] xs:h-[250px] lg:h-[330px]">
               <DropdownMenuComp />
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="text-white flex items-center xs:hidden mx-1 xs:mx-0">
           <svg

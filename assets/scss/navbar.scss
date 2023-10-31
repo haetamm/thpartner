@@ -2,35 +2,34 @@
   background-color: #232D3F;
 }
 
-/* Top and Bottom borders go out */
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+/* Border X get width  */
+div.borderXwidth a:before, div.borderXwidth a:after
 {
     position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
     opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
     transition: all 0.3s;
 }
 
-div.topBotomBordersOut a:before
+div.borderXwidth a:before
 {
+    left: 0px;
     top: 0px;
-    transform: translateY(10px);
 }
 
-div.topBotomBordersOut a:after
+div.borderXwidth a:after
 {
+    right: 0px;
     bottom: 0px;
-    transform: translateY(-10px);
 }
 
-div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
 {
     opacity: 1;
-    transform: translateY(0px);
+    width: 100%;
 }
 
 /* #Mega Menu Styles
@@ -51,38 +50,63 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 /* #toggle Class Styles
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.toggleable > label:after {
-  content: "\25BC";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
+// .toggleable > label:after {
+//   content: "\25BC";
+//   font-size: 10px;
+//   padding-left: 6px;
+//   position: relative;
+//   top: -1px;
+// }
+
+// .toggle-input {
+//   display: none;
+// }
+
+// .toggle-input:not(:checked) ~ .mega-menu {
+//   display: none;
+// }
+
+// .toggle-input:checked ~ .mega-menu {
+//   display: block;
+// }
+
+// .toggle-input:checked + label {
+//   color: white;
+//   background: #008170; /*@apply bg-blue-800 */
+// }
+
+// .toggle-input:checked ~ label:after {
+//   content: "\25B2";
+//   font-size: 10px;
+//   padding-left: 6px;
+//   position: relative;
+//   top: -1px;
+// }
+
+
+
+@media (min-width: 1181px) {
+  /* #hoverable Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hoverable {
+    position: static;
+  
+    a:hover {
+      background-color: #008170;
+    }
+  }
+  
+  .hoverable > a:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .hoverable:hover .mega-menu {
+    display: block;
+  }
+
 }
-
-.toggle-input {
-  display: none;
-}
-
-.toggle-input:not(:checked) ~ .mega-menu {
-  display: none;
-}
-
-.toggle-input:checked ~ .mega-menu {
-  display: block;
-}
-
-.toggle-input:checked + label {
-  color: white;
-  background: #008170; /*@apply bg-blue-800 */
-}
-
-.toggle-input:checked ~ label:after {
-  content: "\25B2";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
-}
-
-
 

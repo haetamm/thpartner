@@ -1,6 +1,6 @@
 <template>
   <div class="background-color-custom">
-    <div class="pt-[4.6rem] md:pt-[5.1rem]">
+    <div class="pt-[4rem]">
       <div class=" w-full">
         <div class=" h-56  md:h-[27rem] overflow-hidden rounded-none">
           <div class=" block w-full h-56  md:h-[27rem] team" />
