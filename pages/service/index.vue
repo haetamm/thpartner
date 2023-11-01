@@ -2,36 +2,10 @@
   <div class="">
     <div class="pt-[4.5rem] md:pt-[4.3rem] kontener mx-auto justify-center ">
       <div class=" grid md:grid-cols-2 md:flex w-full md:justify-center gap-1 my-3 md:px-4">
-        <div class="h-full w-full md:w-[35%] lg:w-[30%]">
-          <div class="hidden md:block py-5 font-gabarito w-full box-content" role="tablist">
-            <NuxtLink to="/service" class="py-4 w-full hover:text-green-700 hover:border-r-4 border-green-200 ">
-              <button class="w-full py-3 text-start">
-                ALL SERVICE
-              </button>
-            </NuxtLink>
-            <NuxtLink to="/team" class="py-4 w-full hover:text-green-700 hover:border-r-4 border-green-200 ">
-              <button class="w-full py-3 text-start">
-                LASTING POWER OF ATTORNEY
-              </button>
-            </NuxtLink>
-            <NuxtLink to="/team" class="py-4 w-full hover:text-green-700 hover:border-r-4 border-green-200 ">
-              <button class="w-full py-3 text-start">
-                LETTERS OF ADMINISTRATION
-              </button>
-            </NuxtLink>
-            <NuxtLink to="/team" class="py-4 w-full hover:text-green-700 hover:border-r-4 border-green-200 ">
-              <button class="w-full py-3 text-start">
-                PROBATE
-              </button>
-            </NuxtLink>
-            <NuxtLink to="/team" class="py-4 w-full hover:text-green-700 hover:border-r-4 border-green-200 ">
-              <button class="w-full py-3 text-start">
-                WILLS
-              </button>
-            </NuxtLink>
-          </div>
+        <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3">
+          <ServiceMenuComp />
         </div>
-        <div class="h-full w-full md:w-[65%] lg:w-[70%] md:border-l-2 md:border-green-200 px-3 md:px-4 md:pl-4">
+        <div class="h-full w-full md:w-[65%] lg:w-[70%] md:border-l-2 md:border-green-200 px-3 md:px-4 md:pl-4 mt-3">
           <div id="controls-carousel" class="relative w-full" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-[400px] xs:h-[350px] md:h-[380px] lg:h-[350px] overflow-hidden rounded-lg ">
@@ -78,7 +52,6 @@
         </div>
       </div>
     </div>
-    <SidebarComp />
     <FooterComp />
   </div>
 </template>

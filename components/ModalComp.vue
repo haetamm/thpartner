@@ -19,7 +19,7 @@
               <div class="font-semibold text-lg mb-2">
                 {{ member.position }}
               </div>
-              <div class="description" v-html="member.description" />
+              <div class="description text-justify" v-html="member.description" />
             </div>
           </div>
           <div class="flex justify-end items-center pb-2">
