@@ -121,8 +121,16 @@ const toggleDropdown = sidebarStore.toggleDropdown
 const route = useRouter()
 const shouldShowDropdown = ref(false)
 
-watch(() => route.currentRoute.value.path, (newPath) => {
+const updateDropdown = (newPath) => {
   shouldShowDropdown.value = !newPath.startsWith('/service')
+}
+
+onMounted(() => {
+  updateDropdown(route.currentRoute.value.path)
+})
+
+watch(() => route.currentRoute.value.path, (newPath) => {
+  updateDropdown(newPath)
 })
 
 const goBack = () => {
@@ -131,5 +139,8 @@ const goBack = () => {
 </script>
 
 <style lang="scss" scoped>
-@use "~/assets/scss/navbar.scss"
+@use "~/assets/scss/navbar.scss";
+.router-link-exact-active {
+  border-bottom: 2px solid white;
+}
 </style>
