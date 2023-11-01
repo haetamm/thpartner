@@ -105,12 +105,6 @@ const sidebarStore = useSidebarStore()
 const toggleDropdown = sidebarStore.toggleDropdown
 </script>
 
-<style scoped>
-.router-link-exact-active {
-  border-bottom: 2px solid white;
-}
-</style>
-
 <style lang="scss">
 @use "../assets/scss/navbar.scss"
 </style>

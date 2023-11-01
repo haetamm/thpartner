@@ -29,6 +29,10 @@
   font-family: "PT Mono", monospace;
 }
 
+.font-gabarito {
+  font-family: "Gabarito", monospace;
+}
+
 body {
   overflow-y: scroll;
 }

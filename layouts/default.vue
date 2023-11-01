@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavComp />
-    <div class="background-color-custom mx-auto">
+    <div class=" mx-auto">
       <slot />
     </div>
     <ModalComp />

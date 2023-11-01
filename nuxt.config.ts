@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@pinia/nuxt'
   ],
-  css: ['~/assets/scss/navbar.scss'],
+  css: [
+    '~/assets/scss/navbar.scss'
+  ],
   app: {
     head: {
       link: [

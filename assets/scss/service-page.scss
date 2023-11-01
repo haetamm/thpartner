@@ -1,0 +1,40 @@
+.kontener {
+  width: 100%;
+  font-family: "Gabarito", sans-serif;
+}
+@media (min-width: 500px) {
+  .kontener {
+    max-width: 500px;
+  }
+}
+@media (min-width: 640px) {
+  .kontener {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .kontener {
+    max-width: 768px;
+  }
+}
+@media (min-width: 900px) {
+  .kontener {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1025px) {
+  .kontener {
+    max-width: 1100px;
+  }
+}
+
+.team {
+  background-color: #232D3F;
+  background-size: cover;
+}
+
+.router-link-exact-active {
+  color: #008170;
+  font-weight: 700;
+  border-right: 4px solid #008170; /* Menambahkan border kanan sebesar 4px dengan gaya solid */
+}
