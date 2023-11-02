@@ -10,6 +10,17 @@
           <ServiceMenuComp />
         </div>
         <div class="h-full w-full md:w-[65%] lg:w-[70%] md:border-l-2 md:border-green-200 px-3 md:px-4 md:pl-4 mt-3">
+          <template v-if="pending">
+            <div role="status" class="max-w-sm animate-pulse">
+              <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4" />
+              <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5" />
+              <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5" />
+              <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5" />
+              <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5" />
+              <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]" />
+              <span class="sr-only">Loading...</span>
+            </div>
+          </template>
           <template v-if="service">
             <div class="text-3xl font-bold text-center">
               {{ service.title }}
@@ -34,7 +45,7 @@ const { slug } = useRoute().params
 // const url = `http://localhost:3000/api/service/${slug}`
 const url = `https://thnotary.netlify.app/api/service/${slug}`
 
-const { data: service } = useFetch(url)
+const { data: service, pending } = useFetch(url)
 
 </script>
 
