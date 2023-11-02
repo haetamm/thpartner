@@ -21,7 +21,7 @@
               <span class="sr-only">Loading...</span>
             </div>
           </template>
-          <template v-if="service">
+          <template v-else>
             <div class="text-3xl font-bold text-center">
               {{ service.title }}
             </div>
@@ -30,7 +30,7 @@
             </p>
             <div class="text-lg mt-4 text-justify px-0 md:px-2" v-html="service.description" />
           </template>
-          <template v-else>
+          <template v-if="!service">
             <NotFoundComp class="mt-5 mb-10" />
           </template>
         </div>
