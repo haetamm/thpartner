@@ -41,7 +41,9 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
           <NuxtLink to="/location" class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">
             LOCATION
           </NuxtLink>
-          <a class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">APPOINTMENT</a>
+          <NuxtLink to="/appointment" class="lg:hover:text-green-500 py-5 md:mx-2 px-4 text-sm lg:text-base font-semibold select-none font-custom text-white cursor-pointer hidden xs:block">
+            APPOINTMENT
+          </NuxtLink>
 
           <!--Toggleable Link-->
           <div class="hoverable text-white hidden xs:block">
