@@ -22,16 +22,18 @@
             </div>
           </template>
           <template v-else>
-            <div class="text-3xl font-bold text-center">
-              {{ service.title }}
-            </div>
-            <p v-if="service.price" class="text-center text-lg mb-2 mt-1">
-              Price: From - {{ service.price }}
-            </p>
-            <div class="text-lg mt-4 text-justify px-0 md:px-2" v-html="service.description" />
-          </template>
-          <template v-if="!service">
-            <NotFoundComp class="mt-5 mb-10" />
+            <template v-if="service">
+              <div class="text-3xl font-bold text-center">
+                {{ service.title }}
+              </div>
+              <p class="text-center text-lg mb-2 mt-1">
+                Price: From - {{ service.price }}
+              </p>
+              <div class="text-lg mt-4 text-justify px-0 md:px-2" v-html="service.description" />
+            </template>
+            <template v-else>
+              <NotFoundComp class="mt-5 mb-10" />
+            </template>
           </template>
         </div>
       </div>
