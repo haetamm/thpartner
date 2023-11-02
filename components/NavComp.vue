@@ -26,9 +26,9 @@ import type DropdownMenuCompVue from './DropdownMenuComp.vue';
             <path d="M33.61,45.28L33.61,45.28L33.6,32.27c0-0.4-0.32-0.72-0.72-0.72H32.3c-0.4,0-0.72,0.32-0.72,0.72v12.34L20.54,58.27l0,0   l-0.01,0.01l0.01-0.01L9.42,44.56V12.32h22.06v5.45c0,0.4,0.32,0.72,0.72,0.72h0.51c0,0,0.79-0.41,0.69-0.84v-6.01   c0.1-0.02,0.1-0.04,0.1-0.06v-0.5c0-0.44-0.79-0.78-0.79-0.78H8.13c-0.23,0-0.44,0.11-0.57,0.28c-0.11,0.12-0.17,0.29-0.17,0.46   v34.19l0,0l11.84,14.55l0,0l1.31,1.6l1.29-1.59l0,0L33.61,45.28z" />
           </g>
         </svg>
-        <span to="/" class="relative block select-none font-custom text-4xl font-normal">
+        <a href="/" class="relative block select-none font-custom text-4xl font-norma border-b-none">
           TH
-        </span>
+        </a>
       </div>
       <div class="flex justify-end">
         <div class="flex borderXwidth items-center">

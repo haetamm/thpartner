@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div class="pt-[4.5rem] md:pt-[4.3rem] kontener mx-auto justify-center ">
+    <div class="pt-[4.5rem] md:pt-[4.3rem] pb-2 kontener mx-auto justify-center ">
       <div class=" grid md:grid-cols-2 md:flex w-full md:justify-center gap-1 my-3 md:px-4">
-        <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3">
+        <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3 px-3 md:px-0">
           <ServiceMenuComp />
         </div>
         <div class="h-full w-full md:w-[65%] lg:w-[70%] md:border-l-2 md:border-green-200 px-3 md:px-4 md:pl-4 mt-3">

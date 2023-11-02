@@ -1,8 +1,12 @@
 <template>
   <div class="">
-    <div class="pt-[4.5rem] md:pt-[4.3rem] kontener mx-auto justify-center ">
+    <Head>
+      <Title>{{ service ? `TH | ${service.title}` : '404 | Not Found' }}</Title>
+      <Meta name="description" :content="service ? service.title : '404 | Not Found'" />
+    </Head>
+    <div class="pt-[4.5rem] md:pt-[4.3rem] pb-2 kontener mx-auto justify-center ">
       <div class=" grid md:grid-cols-2 md:flex w-full md:justify-center gap-1 my-3 md:px-4">
-        <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3">
+        <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3 px-3 md:px-0">
           <ServiceMenuComp />
         </div>
         <div class="h-full w-full md:w-[65%] lg:w-[70%] md:border-l-2 md:border-green-200 px-3 md:px-4 md:pl-4 mt-3">
@@ -13,7 +17,7 @@
             <p v-if="service.price" class="text-center text-lg mb-2 mt-1">
               Price: From - {{ service.price }}
             </p>
-            <div class="text-lg mt-4 text-justify px-2" v-html="service.description" />
+            <div class="text-lg mt-4 text-justify px-0 md:px-2" v-html="service.description" />
           </template>
           <template v-else>
             <NotFoundComp class="mt-5 mb-10" />
@@ -29,14 +33,9 @@
 const { slug } = useRoute().params
 // const url = `http://localhost:3000/api/service/${slug}`
 const url = `https://thnotary.netlify.app/api/service/${slug}`
-const { data: service } = await useFetch(url)
 
-useHead({
-  title: `TH | ${service ? service.title : 'not found'}`,
-  meta: [
-    { name: 'description', content: `${service ? service.title : 'not found'}` }
-  ]
-})
+const { data: service } = useFetch(url)
+
 </script>
 
 <style lang="scss" scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-black xs:bg-white">
+  <div id="app" class="bg-white">
     <div>404</div>
     <div class="txt">
       Not Found<span class="blink">_</span>
