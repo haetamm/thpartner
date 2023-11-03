@@ -13,7 +13,7 @@ const getData = (): serviceData[] => {
       id: 1,
       title: 'ESTATE MATTERS',
       description: '<div>Early Estate Planning is key to protecting and providing for our loved ones in our absence. Let us show how we can help you.</div><div>Simple Will - $200</div><div>Simple Will & LPA - $400</div><div> Probate - From $900</div><div> Letters of Admin - From $900</div>',
-      img: '/service/leter.svg'
+      img: '/service/services.svg'
     },
     {
       id: 2,
