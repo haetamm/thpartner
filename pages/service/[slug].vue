@@ -1,8 +1,8 @@
 <template>
   <div class="">
     <Head>
-      <Title>{{ service ? `TH | ${service.title}` : '404 | Not Found' }}</Title>
-      <Meta name="description" :content="service ? service.title : '404 | Not Found'" />
+      <Title>{{ service && service.title ? `TH | ${service.title}` : '404 | Not Found' }}</Title>
+      <Meta name="description" :content="service && service.title ? service.title : '404 | Not Found'" />
     </Head>
     <div class="pt-[4.5rem] md:pt-[4.3rem] pb-2 kontener mx-auto justify-center ">
       <div class=" grid md:grid-cols-2 md:flex w-full md:justify-center gap-1 my-3 md:px-4">

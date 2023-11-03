@@ -10,14 +10,8 @@
             <h1 class="card-title">
               {{ option.title }}
             </h1>
-            <p class="card-text hover:underline">
-              Read more.
-            </p>
             <p class="card-text">
-              1 hr
-            </p>
-            <p class="card-text">
-              $321
+              {{ option.description }}
             </p>
             <NuxtLink :to="option.url" class="card-btn one">
               Book Now
@@ -33,8 +27,8 @@
 <script setup>
 
 const options = [
-  { color: 'one', url: '/service', title: 'Will Appointment', img: '/meet.svg' },
-  { color: 'two', url: '/service/prbate', title: 'Consultation (Zoom)', img: '/zoom.svg' }
+  { color: 'one', url: '/service', title: 'Will Appointment', img: '/meet.svg', description: 'Includes drafting of a Simple Will. For Complex wills, prices start from $300.' },
+  { color: 'two', url: '/service/prbate', title: 'Consultation (Zoom)', img: '/zoom.svg', description: 'Get their advice on your case or situation. Charges will be $300 per hour or part thereof.' }
 
 ]
 useHead({
