@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-white">
+  <div id="app" class="bg-white font-gabarito">
     <div>404</div>
     <div class="txt">
       Not Found<span class="blink">_</span>
@@ -8,7 +8,6 @@
 </template>
 <style scoped>
 * {
-   font-family: 'Press Start 2P', cursive;
    box-sizing: border-box;
 }
 

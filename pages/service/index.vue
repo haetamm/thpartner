@@ -58,14 +58,13 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
+import { initCarousels } from 'flowbite'
 
-// const { data: services } = await useFetch('http://localhost:3000/api/service')
-const { data: services } = await useFetch('https://thnotary.netlify.app/api/service')
+const { data: services } = await useFetch('/api/service')
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-  initFlowbite()
+  initCarousels()
 })
 
 useHead({

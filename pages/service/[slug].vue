@@ -55,8 +55,7 @@
 
 <script setup>
 const { slug } = useRoute().params
-// const url = `http://localhost:3000/api/service/${slug}`
-const url = `https://thnotary.netlify.app/api/service/${slug}`
+const url = `/api/service/${slug}`
 
 const { data: service, pending } = useFetch(url)
 
