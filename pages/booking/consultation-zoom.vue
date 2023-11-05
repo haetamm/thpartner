@@ -7,3 +7,11 @@
     <SidebarComp />
   </div>
 </template>
+<script setup>
+useHead({
+  title: 'TH | Consultation Zoom',
+  meta: [
+    { name: 'Booking | Consultation Zoom', content: 'Booking' }
+  ]
+})
+</script>

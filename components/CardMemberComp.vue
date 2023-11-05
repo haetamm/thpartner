@@ -54,7 +54,6 @@ import { useModalStore, useMemberStore } from '@/store'
 import { getDescription } from '~/utils/helper'
 
 const modalStore = useModalStore()
-
 const memberList = useMemberStore().memberList
 
 defineProps({

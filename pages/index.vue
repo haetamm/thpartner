@@ -26,7 +26,7 @@
 
 <script setup>
 useHead({
-  title: 'TH Notary',
+  title: 'TH Partner',
   meta: [
     { name: 'description', content: 'nuxtional' }
   ]
