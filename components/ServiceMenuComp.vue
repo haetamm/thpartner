@@ -8,9 +8,9 @@
       </NuxtLink>
     </div>
   </div>
-  <div class="block md:hidden py-5 font-gabarito w-full box-content">
-    <label for="services" class="block mb-2 text-gray-900 dark:text-white text-xl font-bold">List Service :</label>
-    <select id="services" v-model="selectedOption" class="bg-white border-b-2 border-gray-300 text-gray-900 text-sm outline-none focus:none  block w-full px-0 py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" @change="handleChange">
+  <div class="inline-block md:hidden py-5 font-gabarito w-full xs:flex justify-between items-center box-content">
+    <label for="services" class="block mb-2 xs:mb-0 text-gray-900 dark:text-white text-lg w-full xs:w-1/3">List Service :</label>
+    <select id="services" v-model="selectedOption" class="bg-white border-b-2 border-gray-300 text-gray-900 text-sm outline-none focus:none  block w-full xs:1/7 px-0 py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" @change="handleChange">
       <option v-for="option in options" :key="option.url" :value="option.url">
         {{ option.title }}
       </option>
