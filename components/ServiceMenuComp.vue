@@ -9,11 +9,8 @@
     </div>
   </div>
   <div class="block md:hidden py-5 font-gabarito w-full box-content">
-    <div class="text-xl font-bold mb-3 ">
-      List Service :
-    </div>
-    <label for="underline_select" class="sr-only">Underline select</label>
-    <select id="underline_select" v-model="selectedOption" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer" @change="handleChange">
+    <label for="services" class="block mb-2 text-gray-900 dark:text-white text-xl font-bold">List Service :</label>
+    <select id="services" v-model="selectedOption" class="bg-white border-b-2 border-gray-300 text-gray-900 text-sm outline-none focus:none  block w-full px-0 py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" @change="handleChange">
       <option v-for="option in options" :key="option.url" :value="option.url">
         {{ option.title }}
       </option>
