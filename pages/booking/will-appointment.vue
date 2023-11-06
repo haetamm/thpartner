@@ -12,7 +12,7 @@
       <div class=" justify-beetwen grid grid-cols-1 lg:flex mx-auto gap-2 px-0 xs:px-1 container">
         <div class="inline-block xs:flex w-full lg:w-[70%] justify-center space-x-0 xs:space-x-3">
           <div class="w-full inline-block xs:flex justify-center space-x-0 xs:space-x-3 space-y-3 md:space-y-0 overflow-auto">
-            <div class="flex justify-center overflow-auto bg-white relative">
+            <div class="flex justify-center overflow-auto bg-transparent">
               <v-date-picker />
             </div>
             <div class="">
