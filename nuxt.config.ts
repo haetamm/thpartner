@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     }
   },
   css: [
-    '~/assets/scss/navbar.scss'
   ],
   app: {
     head: {

@@ -1,26 +1,34 @@
 <template>
   <div class="font-gabarito">
     <div class="pt-[6rem] pb-10 ">
-      <div class="border-b-2 py-3 container mx-auto mb-6 flex justify-center md:justify-normal">
-        <div class="px-4 md:px-20 lg:px-4 mb-1">
-          <p class="font-semibold text-2xl">
+      <div class="border-b-2 container mx-auto mb-6 flex justify-center md:justify-normal">
+        <div class="mb-1">
+          <div class="pt-2 pb-6 flex items-center w-[60px] cursor-pointer hover:text-green-600 space-x-0.5" @click="goBack">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true"><path fill-rule="evenodd" d="M12.2929466,3.99983983 L13.0000534,4.70694661 L7.7015668,10.0028398 L13,15.293 L12.2928932,16.0001068 L6.2895668,10.0061485 L6.2925668,10.0028398 L6.29036026,10 L12.2929466,3.99983983 Z" /></svg>
+            <span class="text-xl ">
+              Back
+            </span>
+          </div>
+          <div class="font-semibold text-2xl px-1 md:px-20 lg:px-5">
             Will Appointment
-          </p>
-          <p>Check out our availability and book the date and time that works for you</p>
+          </div>
+          <div class="px-1 md:px-20 lg:px-5">
+            Check out our availability and book the date and time that works for you
+          </div>
         </div>
       </div>
       <div class=" justify-beetwen grid grid-cols-1 lg:flex mx-auto gap-2 px-0 xs:px-1 container">
         <div class="inline-block xs:flex w-full lg:w-[70%] justify-center space-x-0 xs:space-x-3">
           <div class="w-full inline-block xs:flex justify-center space-x-0 xs:space-x-3 space-y-3 md:space-y-0 overflow-auto">
-            <div class="flex justify-center overflow-auto bg-transparent">
+            <div class="flex justify-center overflow-auto bg-white relative">
               <v-date-picker />
             </div>
-            <div class="">
+            <div>
               <div class=" justify-center">
-                <div class="title-time text-center xs:text-start">
+                <div class="title-time text-center xs:text-start pt-[3px] md:pt-[16px]">
                   SELECT TIME
                 </div>
-                <div class="text-lg xs:text-xl md:text-2xl my-3 text-center xs:text-start">
+                <div class="font-normal text-lg my-3 text-center xs:text-start">
                   Thursday, 9 November
                 </div>
               </div>
@@ -39,19 +47,19 @@
         </div>
         <div class="w-full lg:w-[30%] mt-16 lg:mt-0 px-4 lg:px-0">
           <div class="px-4 xs:px-10 md:px-20 lg:px-4 border-2 lg:border-none py-8 lg:py-0">
-            <div class="title-time hidden lg:flex justify-center lg:justify-normal">
+            <div class="title-time hidden lg:flex justify-center lg:justify-normal pt-[3px] md:pt-[16px]">
               SERVICE DETAIL
             </div>
             <div class="flex text-xl font-bold lg:hidden justify-center lg:justify-normal">
               SERVICE DETAIL
             </div>
             <div class="text-lg my-3 border-b-2">
-              <div class="leading-9 lg:leading-8 pb-3 font-normal">
+              <div class="leading-9 lg:leading-8 pb-2 font-normal">
                 <div>Will Appointment</div>
-                <div>09 Novermber 2023 at 10:00 wib</div>
+                <!-- <div>09 Novermber 2023 at 10:00 wib</div>
                 <div>Upper Cross Street</div>
                 <div>1 hr</div>
-                <div>$321</div>
+                <div>$321</div> -->
               </div>
             </div>
             <button class="w-full py-2 bg-slate-300 border-none cursor-pointer rounded-md">
@@ -81,6 +89,10 @@ const splitItemsIntoGroups = () => {
 
 splitItemsIntoGroups()
 
+const goBack = () => {
+  history.back()
+}
+
 useHead({
   title: 'TH | Will Appointment',
   meta: [
@@ -99,9 +111,8 @@ useHead({
     font-size: 0.75rem;
     grid-area: title;
     padding-inline-end: 12px;
-    padding-top: 16px;
     padding-bottom: 16px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.1666666667em;
 }
 

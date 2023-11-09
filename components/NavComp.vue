@@ -129,16 +129,21 @@ watch(route.currentRoute, () => {
 })
 
 const updateDropdown = (newPath) => {
-  shouldShowDropdown.value = !newPath.startsWith('/service')
+  shouldShowDropdown.value = !(
+    newPath.startsWith('/service') || newPath.startsWith('/booking')
+  )
 }
 
 onMounted(() => {
   updateDropdown(route.currentRoute.value.path)
 })
 
-watch(() => route.currentRoute.value.path, (newPath) => {
-  updateDropdown(newPath)
-})
+watch(
+  () => route.currentRoute.value.path,
+  (newPath) => {
+    updateDropdown(newPath)
+  }
+)
 
 const goBack = () => {
   history.back()

@@ -15,6 +15,10 @@
   --card4-gradient-color2: #38ef7d;
 }
 
+.nav-background {
+  background-color: #232d3f;
+}
+
 .background-color-custom {
   background: rgb(15, 15, 15);
   background: -moz-linear-gradient(
