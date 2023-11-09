@@ -1,6 +1,24 @@
 import { defineStore } from 'pinia'
 import type { teamData } from './../source/team'
 
+interface appointment {
+  id: number;
+  date: string;
+  time: string;
+  option: string;
+}
+
+export const useAppointment = defineStore('appointment', {
+  state: () => ({
+    appointment: {} as appointment
+  }),
+  actions: {
+    setAppointment (data: appointment) {
+      this.appointment = data
+    }
+  }
+})
+
 export const useMemberStore = defineStore('member', {
   state: () => ({
     memberList: [] as teamData[]
@@ -26,14 +44,7 @@ export const useSidebarStore = defineStore('sidebar', {
 export const useModalStore = defineStore('modal', {
   state: () => ({
     isModalOpen: false,
-    member: {
-      id: 0,
-      name: '',
-      position: '',
-      description: '',
-      avatar_card: '',
-      avatar: ''
-    }
+    member: {} as teamData
   }),
   actions: {
     toggleModal () {
