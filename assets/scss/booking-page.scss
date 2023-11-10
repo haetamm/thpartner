@@ -1,0 +1,29 @@
+.hidden-checkbox {
+  display: none;
+}
+
+.v-row {
+  margin: -5px;
+}
+
+.title-time {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    grid-area: title;
+    padding-inline-end: 12px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1666666667em;
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+@media (min-width: 360px) {
+  .v-row {
+    margin: 0;
+  }
+}

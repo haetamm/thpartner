@@ -1,9 +1,9 @@
 <template>
   <div class="font-gabarito">
     <div class="pt-[6rem] pb-10 ">
-      <div class="border-b-2 container mx-auto mb-6 flex justify-center md:justify-normal">
+      <div class="px-3 xs:px-0 border-b-2 container mx-auto mb-6 flex justify-center md:justify-normal">
         <div class="mb-1">
-          <div class="pt-2 pb-6 flex items-center w-[60px] cursor-pointer hover:text-green-600 space-x-0.5" @click="goBack">
+          <div class="pt-2 pb-3 flex items-center w-[60px] cursor-pointer hover:text-green-600 space-x-0.5" @click="goBack">
             <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true"><path fill-rule="evenodd" d="M12.2929466,3.99983983 L13.0000534,4.70694661 L7.7015668,10.0028398 L13,15.293 L12.2928932,16.0001068 L6.2895668,10.0061485 L6.2925668,10.0028398 L6.29036026,10 L12.2929466,3.99983983 Z" /></svg>
             <span class="text-xl ">
               Back
@@ -22,7 +22,7 @@
           <div class="w-full inline-block xs:flex justify-center space-x-0 xs:space-x-3 space-y-3 md:space-y-0 overflow-auto">
             <div class="flex justify-center overflow-auto bg-white relative">
               <v-row>
-                <v-date-picker v-model="date" />
+                <v-date-picker v-model="date" :allowed-dates="allowedDates" />
               </v-row>
             </div>
             <div>
@@ -78,30 +78,23 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { times, splitItemsIntoGroups, allowedDates } from '~/utils/helper'
 
 const date = ref()
+const selectedTime = ref('')
+
+const timeGroup = splitItemsIntoGroups(times)
+
 const formattedDate = computed(() => {
   const options = { day: 'numeric', month: 'long', year: 'numeric' }
   return date.value ? new Date(date.value).toLocaleString('en-EN', options) : ''
 })
 
-const selectedTime = ref('')
 const handleCheckbox = (time) => {
   if (formattedDate.value) {
     selectedTime.value = time
   }
 }
-
-const times = ['08:00', '9:00', '10:00', '11:00', '13:00', '14:00', '15:00', '16:00']
-const timeGroup = []
-const splitItemsIntoGroups = () => {
-  const groupSize = 4
-  for (let i = 0; i < times.length; i += groupSize) {
-    const group = times.slice(i, i + groupSize)
-    timeGroup.push(group)
-  }
-}
-splitItemsIntoGroups()
 
 const goBack = () => {
   history.back()
@@ -115,34 +108,6 @@ useHead({
 })
 </script>
 
-<style scoped>
-.hidden-checkbox {
-  display: none;
-}
-
-.v-row {
-  margin: -5px;
-}
-
-.title-time {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    grid-area: title;
-    padding-inline-end: 12px;
-    padding-bottom: 16px;
-    font-weight: 600;
-    letter-spacing: 0.1666666667em;
-}
-
-@media (min-width: 900px) {
-  .container {
-    max-width: 1050px;
-  }
-}
-
-@media (min-width: 360px) {
-  .v-row {
-    margin: 0;
-  }
-}
+<style lang="scss" scoped>
+@use "~/assets/scss/booking-page.scss"
 </style>
