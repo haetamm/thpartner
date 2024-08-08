@@ -4,8 +4,20 @@
 
 .v-row {
   margin: -5px;
+  justify-content: center;
 }
 
+.v-sheet {
+  // background-color: #006400;
+  // color: white;
+  border-radius: 0;
+  position: relative;
+  box-shadow: none;
+}
+
+.v-picker__header {
+  display: none;
+}
 .title-time {
     text-transform: uppercase;
     font-size: 0.75rem;

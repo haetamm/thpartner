@@ -1,6 +1,6 @@
 <template>
-  <div class="font-gabarito">
-    <div class="pt-[6rem] pb-10 inline-block xs:flex justify-center container mx-auto space-x-0 space-y-4 xs:space-y-0 xs:space-x-6 lg:space-x-20 px-6">
+  <div class="flex-grow font-gabarito bg-white mx-auto">
+    <div class="pt-[6rem] pb-10 inline-block sm:flex justify-center container mx-auto space-x-0 space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-20 px-6">
       <template v-for="option of options" :key="option.url">
         <div class="card-wrap w-full xs:w-[272px] md:hover:scale-[1.1]">
           <div :class="`card-header ${option.color}`">
@@ -20,8 +20,6 @@
         </div>
       </template>
     </div>
-    <FooterComp />
-    <SidebarComp />
   </div>
 </template>
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="flex-grow">
     <div class="pt-[4.5rem] md:pt-[4.3rem] pb-2 kontener mx-auto justify-center ">
       <div class=" grid md:grid-cols-2 md:flex w-full md:justify-center gap-1 my-3 md:px-4">
         <div class="h-full w-full md:w-[35%] lg:w-[30%] mt-3 px-3 md:px-0">
@@ -52,7 +52,6 @@
         </div>
       </div>
     </div>
-    <FooterComp />
   </div>
 </template>
 
@@ -62,7 +61,6 @@ import { initCarousels } from 'flowbite'
 
 const { data: services } = await useFetch('/api/service')
 
-// initialize components based on data attribute selectors
 onMounted(() => {
   initCarousels()
 })

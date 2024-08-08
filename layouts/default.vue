@@ -1,9 +1,15 @@
 <template>
-  <div>
+  <div className="min-h-screen flex flex-col">
     <NavComp />
-    <div class=" mx-auto">
-      <slot />
-    </div>
+    <slot />
+    <SidebarComp />
     <ModalComp />
+    <FooterComp v-if="!hideFooter" />
   </div>
 </template>
+<script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+const hideFooter = computed(() => route.path === '/location')
+</script>

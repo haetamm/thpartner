@@ -1,5 +1,5 @@
 <template>
-  <div class="background-color-custom">
+  <div class="background-color-custom flex-grow">
     <div class="pt-[4rem] flex justify-center">
       <iframe
         title="location-th-notary"
@@ -11,7 +11,6 @@
         class="container h-screen"
       />
     </div>
-    <SidebarComp />
   </div>
 </template>
 <script setup>

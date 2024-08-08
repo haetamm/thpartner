@@ -41,6 +41,6 @@ const options = getData()
 .router-link-exact-active {
   color: #008170;
   font-weight: 700;
-  border-right: 4px solid #008170; /* Menambahkan border kanan sebesar 4px dengan gaya solid */
+  border-right: 4px solid #008170;
 }
 </style>
