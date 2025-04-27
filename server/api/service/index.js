@@ -1,7 +1,7 @@
-import { getData } from '~/source/services'
+import { getData } from '~/source/services';
 
 export default defineEventHandler(() => {
-  const services = getData()
+  const services = getData();
 
-  return services
-})
+  return services;
+});

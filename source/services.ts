@@ -1,4 +1,3 @@
-// Define the interface for the data structure
 export interface serviceData {
   id: number;
   title: string;
@@ -6,7 +5,6 @@ export interface serviceData {
   img: string;
 }
 
-// Function to get data
 const getData = (): serviceData[] => {
   return [
     {
@@ -45,7 +43,7 @@ const getData = (): serviceData[] => {
       description: '<div>Legal advice should be sought as soon as possible in criminal matters. Don\'t wait till it\'s too late. Let us help you make the right choice</div>',
       img: '/service/defence.svg'
     }
-  ]
-}
+  ];
+};
 
-export { getData }
+export { getData };

@@ -1,5 +1,5 @@
-import { defineStore } from 'pinia'
-import type { teamData } from './../source/team'
+import { defineStore } from 'pinia';
+import type { teamData } from './../source/team';
 
 interface appointment {
   id: number;
@@ -14,10 +14,10 @@ export const useAppointment = defineStore('appointment', {
   }),
   actions: {
     setAppointment (data: appointment) {
-      this.appointment = data
+      this.appointment = data;
     }
   }
-})
+});
 
 export const useMemberStore = defineStore('member', {
   state: () => ({
@@ -25,10 +25,10 @@ export const useMemberStore = defineStore('member', {
   }),
   actions: {
     setMemberList (data: teamData[]) {
-      this.memberList = data
+      this.memberList = data;
     }
   }
-})
+});
 
 export const useSidebarStore = defineStore('sidebar', {
   state: () => ({
@@ -36,10 +36,10 @@ export const useSidebarStore = defineStore('sidebar', {
   }),
   actions: {
     toggleDropdown () {
-      this.isDropdownOpen = !this.isDropdownOpen
+      this.isDropdownOpen = !this.isDropdownOpen;
     }
   }
-})
+});
 
 export const useModalStore = defineStore('modal', {
   state: () => ({
@@ -48,14 +48,14 @@ export const useModalStore = defineStore('modal', {
   }),
   actions: {
     toggleModal () {
-      this.isModalOpen = !this.isModalOpen
+      this.isModalOpen = !this.isModalOpen;
     },
     setMemberData (data: teamData) {
-      this.member.id = data.id
-      this.member.name = data.name
-      this.member.position = data.position
-      this.member.description = data.description
-      this.member.avatar = data.avatar
+      this.member.id = data.id;
+      this.member.name = data.name;
+      this.member.position = data.position;
+      this.member.description = data.description;
+      this.member.avatar = data.avatar;
     }
   }
-})
+});

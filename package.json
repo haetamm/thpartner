@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -p 4000",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -27,6 +27,7 @@
     "vuetify": "^3.3.23"
   },
   "dependencies": {
+    "@kalimahapps/vue-icons": "^1.7.1",
     "@mdi/font": "^7.3.67",
     "@pinia/nuxt": "^0.5.1",
     "flowbite": "^2.0.0",

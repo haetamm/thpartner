@@ -1,7 +1,7 @@
-import { getData } from '~/source/team'
+import { getData } from '~/source/team';
 
 export default defineEventHandler(() => {
-  const teams = getData()
+  const teams = getData();
 
-  return teams
-})
+  return teams;
+});

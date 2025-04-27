@@ -45,7 +45,7 @@ const getData = (): linkServiceDetail[] => {
       description: 'Drafting a Will allows you to decide on how your assets are to be distributed. In the absence of a Will, your assets will be distributed in accordance with the rules of distribution as set out in the Intestate Succession Act (Cap. 146).',
       img: '/service/services.svg'
     }
-  ]
-}
+  ];
+};
 
-export { getData }
+export { getData };

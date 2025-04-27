@@ -15,13 +15,26 @@
     "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
-  "plugins": [
-    "vue",
-    "@typescript-eslint"
-  ],
+  "plugins": ["vue", "@typescript-eslint"],
   "rules": {
-    "indent": ["error", 2], // Mengatur indentasi menggunakan 3 spasi
-    "vue/html-indent": ["error", 2], // Mengatur indentasi HTML Vue menggunakan 3 spasi
-    "@typescript-eslint/indent": ["error", 2]
+    "indent": ["error", 2],
+    "vue/html-indent": ["error", 2],
+    "@typescript-eslint/indent": ["error", 2],
+    "semi": ["error", "always"],
+    "@typescript-eslint/semi": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "@typescript-eslint/comma-dangle": ["error", "never"],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "never",
+          "normal": "always",
+          "component": "always"
+        },
+        "svg": "always",
+        "math": "always"
+      }
+    ]
   }
 }

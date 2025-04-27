@@ -86,7 +86,7 @@ const getData = (): detailServiceData[] => {
       price: '900',
       slug: 'probate'
     }
-  ]
-}
+  ];
+};
 
-export { getData }
+export { getData };

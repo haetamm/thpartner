@@ -1,4 +1,3 @@
-// Define the interface for the data structure
 export interface teamData {
   id: number;
   name: string;
@@ -8,7 +7,6 @@ export interface teamData {
   avatar: string;
 }
 
-// Function to get data
 const getData = (): teamData[] => {
   return [
     {
@@ -35,7 +33,7 @@ const getData = (): teamData[] => {
       card_avatar: '/liza_yeo_card.webp',
       avatar: '/liza_yeo.webp'
     }
-  ]
-}
+  ];
+};
 
-export { getData }
+export { getData };

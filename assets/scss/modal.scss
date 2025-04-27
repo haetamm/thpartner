@@ -14,154 +14,152 @@
 }
 
 .modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    font-family: "Gabarito";
-    transition: opacity 0.25s ease;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Gabarito";
+  transition: opacity 0.25s ease;
 }
 
 .description {
-    font-size: 19px;
-    line-clamp: 1;
+  font-size: 19px;
+  line-clamp: 1;
 }
 
 .image-user {
-    width: 230px;
-    height: 340px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+  width: 230px;
+  height: 340px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .modal-content {
-    background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    animation: modal-anim 0.3s;
+  background-color: transparent;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  animation: modal-anim 0.3s;
 }
 
 .delete-modal {
-    width: 75%;
+  width: 75%;
 }
 
 .detail-modal {
-    width: 95%;
+  width: 95%;
 
-    .detail-modal__wrap {
-        font-size: 16px;
-    }
+  .detail-modal__wrap {
+    font-size: 16px;
+  }
 
-    .detail-modal__title {
-        font-weight: bold;
-        font-size: 26px;
-    }
+  .detail-modal__title {
+    font-weight: bold;
+    font-size: 26px;
+  }
 
-    .detail-modal__body {
-        margin: 20px 0 10px 0;
-    }
+  .detail-modal__body {
+    margin: 20px 0 10px 0;
+  }
 }
 
 .modal-card {
-    background-color: white;
-    padding: 0 7px 7px 7px;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 15px;
-    line-height: 1.5;
+  background-color: white;
+  padding: 0 7px 7px 7px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  line-height: 1.5;
 
-    .modal-card-delete__body {
-        font-size: 20px;
-        align-items: center;
-    }
+  .modal-card-delete__body {
+    font-size: 20px;
+    align-items: center;
+  }
 
-    button {
-        padding: 8px;
-    }
+  button {
+    padding: 8px;
+  }
 
-    button:hover {
-        background-color: #008170;
-        color: white;
-    }
+  button:hover {
+    background-color: #008170;
+    color: white;
+  }
 }
 
 .close-wrap {
-    .close {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-    }
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+  }
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 430px) {
-    .delete-modal {
-        width: 45%;
-    }
+  .delete-modal {
+    width: 45%;
+  }
 
-    .detail-modal {
-        width: 93%;
-    }
+  .detail-modal {
+    width: 93%;
+  }
 }
 
 @media only screen and (min-width: 500px) {
-    .image-user {
-        width: 350px;
-        height: 400px;
-    }
+  .image-user {
+    width: 350px;
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 675px) {
-    .delete-modal {
-        width: 35%;
-    }
+  .delete-modal {
+    width: 35%;
+  }
 
-    .detail-modal {
-        width: 90%;
-    }
+  .detail-modal {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 900px) {
-    .delete-modal {
-        width: 25%;
-    }
+  .delete-modal {
+    width: 25%;
+  }
 
-    .detail-modal {
-        width: 80%;
-    }
-    
+  .detail-modal {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-   
-    .delete-modal {
-        width: 20%;
-    }
+  .delete-modal {
+    width: 20%;
+  }
 
-    .detail-modal {
-        width: 75%;
-    }
+  .detail-modal {
+    width: 75%;
+  }
 
-    .image-user {
-        width: 430px;
-        height: 430px;
-    }
+  .image-user {
+    width: 430px;
+    height: 430px;
+  }
 }
 
 @media only screen and (min-width: 1256px) {
-    .detail-modal {
-        width: 65%;
-    }
+  .detail-modal {
+    width: 65%;
+  }
 }

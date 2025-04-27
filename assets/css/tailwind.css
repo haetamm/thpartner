@@ -52,6 +52,7 @@
 
 body {
   overflow-y: scroll;
+  background: white;
 }
 
 .shadow-custom {
